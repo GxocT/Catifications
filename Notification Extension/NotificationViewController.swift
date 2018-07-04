@@ -12,16 +12,33 @@ import UserNotificationsUI
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
 
-    @IBOutlet var label: UILabel?
+    @IBOutlet weak var notificationTitleLabel: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
+    @IBAction func defaultButtonTapped(_ sender: UIButton) {
+        extensionContext?.performNotificationDefaultAction()
+    }
+    
+    @IBAction func likeButtonTapped(_ sender: UIButton) {
+        likeButton.setTitle("♥", for: .normal)
+        extensionContext?.dismissNotificationContentExtension()
     }
     
     func didReceive(_ notification: UNNotification) {
-        self.label?.text = notification.request.content.body
+        self.notificationTitleLabel.text = notification.request.content.body
     }
-
+    
+    func didReceive(_ response: UNNotificationResponse, completionHandler completion: @escaping (UNNotificationContentExtensionResponseOption) -> Void) {
+        switch response.actionIdentifier {
+        case "like-action":
+            let actions = [
+                UNNotificationAction(identifier: "1-star",  title: "★", options: []),
+                UNNotificationAction(identifier: "2-star",  title: "★ ★", options: []),
+                UNNotificationAction(identifier: "3-star",  title: "★ ★ ★", options: []),
+                ]
+            extensionContext?.notificationActions = actions
+        default:
+            extensionContext?.dismissNotificationContentExtension()
+        }
+    }
 }

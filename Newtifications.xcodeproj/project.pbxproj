@@ -17,6 +17,8 @@
 		D2D7DC7220ECECD7009C9B59 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7DC7120ECECD7009C9B59 /* NotificationViewController.swift */; };
 		D2D7DC7520ECECD7009C9B59 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D7DC7320ECECD7009C9B59 /* MainInterface.storyboard */; };
 		D2D7DC7920ECECD7009C9B59 /* Notification Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D7DC6A20ECECD7009C9B59 /* Notification Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2D7DC7F20ECF7B0009C9B59 /* cat_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2D7DC7E20ECF7B0009C9B59 /* cat_01.jpg */; };
+		D2D7DC8020ECF7B0009C9B59 /* cat_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2D7DC7E20ECF7B0009C9B59 /* cat_01.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,7 @@
 		D2D7DC7120ECECD7009C9B59 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D2D7DC7420ECECD7009C9B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		D2D7DC7620ECECD7009C9B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D7DC7E20ECF7B0009C9B59 /* cat_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat_01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 				D24E087420ECC23D00B6E70C /* Assets.xcassets */,
 				D24E087620ECC23D00B6E70C /* LaunchScreen.storyboard */,
 				D24E087920ECC23D00B6E70C /* Info.plist */,
+				D2D7DC7E20ECF7B0009C9B59 /* cat_01.jpg */,
 			);
 			path = Newtifications;
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24E087820ECC23D00B6E70C /* LaunchScreen.storyboard in Resources */,
+				D2D7DC7F20ECF7B0009C9B59 /* cat_01.jpg in Resources */,
 				D24E087520ECC23D00B6E70C /* Assets.xcassets in Resources */,
 				D24E087320ECC23B00B6E70C /* Main.storyboard in Resources */,
 			);
@@ -222,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D7DC7520ECECD7009C9B59 /* MainInterface.storyboard in Resources */,
+				D2D7DC8020ECF7B0009C9B59 /* cat_01.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

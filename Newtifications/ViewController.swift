@@ -9,12 +9,22 @@
 import UIKit
 import UserNotifications
 
+extension ViewController: UNUserNotificationCenterDelegate {
+    
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UNUserNotificationCenter.current().delegate = self
+        let actions = [
+            UNNotificationAction(identifier: "like-action",  title: "Like", options: []),
+            UNNotificationAction(identifier: "open-app",  title: "Open Application", options: []),
+            UNNotificationAction(identifier: "dismiss",  title: "Dismiss", options: []),
+            ]
         
-        let simpleCategory = UNNotificationCategory(identifier: "category-simple", actions: [], intentIdentifiers: [], options: [])
+        let simpleCategory = UNNotificationCategory(identifier: "category-simple", actions: actions, intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([simpleCategory])
     }
 
@@ -37,7 +47,7 @@ class ViewController: UIViewController {
             
             UNUserNotificationCenter.current().add(request, withCompletionHandler: {
                 (error) in
-                //♡♥
+                
                 
             })
         }
