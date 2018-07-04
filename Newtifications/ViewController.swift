@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let simpleCategory = UNNotificationCategory(identifier: "category-id", actions: [], intentIdentifiers: [], options: [])
+        let simpleCategory = UNNotificationCategory(identifier: "category-simple", actions: [], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([simpleCategory])
     }
 
@@ -26,9 +26,10 @@ class ViewController: UIViewController {
             
             let content = UNMutableNotificationContent()
             content.title = "Simple Title"
-            content.title = "Simple Subtitle"
+            content.subtitle = "Simple Subtitle"
             content.body = "Simple Body"
             content.sound = .default
+            content.categoryIdentifier = "category-simple"
             
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
             let uuid = UUID().uuidString
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
             
             UNUserNotificationCenter.current().add(request, withCompletionHandler: {
                 (error) in
-                
+                //♡♥
                 
             })
         }
