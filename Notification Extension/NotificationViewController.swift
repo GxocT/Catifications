@@ -16,12 +16,12 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     @IBOutlet weak var likeButton: UIButton!
     
     @IBAction func defaultButtonTapped(_ sender: UIButton) {
-        extensionContext?.performNotificationDefaultAction()
+        openApp()
     }
     
     @IBAction func likeButtonTapped(_ sender: UIButton) {
         likeButton.setTitle("♥", for: .normal)
-        extensionContext?.dismissNotificationContentExtension()
+        dismissNotification()
     }
     
     func didReceive(_ notification: UNNotification) {
@@ -37,8 +37,18 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
                 UNNotificationAction(identifier: "3-star",  title: "★ ★ ★", options: []),
                 ]
             extensionContext?.notificationActions = actions
+        case "open-app":
+            openApp()
         default:
-            extensionContext?.dismissNotificationContentExtension()
+            dismissNotification()
         }
+    }
+    
+    func openApp() {
+        extensionContext?.performNotificationDefaultAction()
+    }
+    
+    func dismissNotification() {
+        extensionContext?.dismissNotificationContentExtension()
     }
 }

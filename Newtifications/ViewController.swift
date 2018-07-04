@@ -9,15 +9,19 @@
 import UIKit
 import UserNotifications
 
-extension ViewController: UNUserNotificationCenterDelegate {
-    
-}
-
 class ViewController: UIViewController {
 
+    @IBAction func sendNotificationPressed(_ sender: UIButton) {
+        sendLocalNotification()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        UNUserNotificationCenter.current().delegate = self
+        
+        setupNotificationCategories()
+    }
+    
+    func setupNotificationCategories() {
         let actions = [
             UNNotificationAction(identifier: "like-action",  title: "Like", options: []),
             UNNotificationAction(identifier: "open-app",  title: "Open Application", options: []),
@@ -28,16 +32,16 @@ class ViewController: UIViewController {
         UNUserNotificationCenter.current().setNotificationCategories([simpleCategory])
     }
 
-    @IBAction func sendNotificationPressed(_ sender: UIButton) {
+    func sendLocalNotification() {
         UNUserNotificationCenter.current().getNotificationSettings {
             (settings) in
             
             guard settings.authorizationStatus == .authorized else { return }
             
             let content = UNMutableNotificationContent()
-            content.title = "Simple Title"
-            content.subtitle = "Simple Subtitle"
-            content.body = "Simple Body"
+            content.title = "Cat Title"
+            content.subtitle = "Cat Subtitle"
+            content.body = "Cat Body"
             content.sound = .default
             content.categoryIdentifier = "category-simple"
             
@@ -47,7 +51,6 @@ class ViewController: UIViewController {
             
             UNUserNotificationCenter.current().add(request, withCompletionHandler: {
                 (error) in
-                
                 
             })
         }

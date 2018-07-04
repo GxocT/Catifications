@@ -14,23 +14,23 @@
             <objects>
                 <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="Notification_Extension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat_01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bAV-M7-609" userLabel="Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="g2c-Uu-Pcg"/>
+                                    <constraint firstAttribute="height" constant="300" id="g2c-Uu-Pcg"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAU-tC-R4y" userLabel="Default Button">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
                                 <connections>
                                     <action selector="defaultButtonTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="mkn-xX-Ifz"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iO-Pq-Pk2">
-                                <rect key="frame" x="0.0" y="200" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="250" width="320" height="50"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Kitty" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
                                         <rect key="frame" x="16" y="0.0" width="246" height="50"/>
@@ -106,7 +106,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="250"/>
+                    <size key="freeformSize" width="320" height="300"/>
                     <connections>
                         <outlet property="likeButton" destination="DaQ-0V-XsA" id="l3x-PN-BFM"/>
                         <outlet property="notificationTitleLabel" destination="GcN-lo-r42" id="XKU-ZU-O6J"/>
