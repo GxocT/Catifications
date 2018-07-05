@@ -21,7 +21,14 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     
     @IBAction func likeButtonTapped(_ sender: UIButton) {
         likeButton.setTitle("♥", for: .normal)
-        dismissNotification()
+    }
+    
+    func openApp() {
+        extensionContext?.performNotificationDefaultAction()
+    }
+    
+    func dismissNotification() {
+        extensionContext?.dismissNotificationContentExtension()
     }
     
     func didReceive(_ notification: UNNotification) {
@@ -44,11 +51,4 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         }
     }
     
-    func openApp() {
-        extensionContext?.performNotificationDefaultAction()
-    }
-    
-    func dismissNotification() {
-        extensionContext?.dismissNotificationContentExtension()
-    }
 }
