@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func registerNotifications() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .alert, .sound, .providesAppNotificationSettings]) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .alert, .sound, .provisional, .providesAppNotificationSettings]) {
             (granted, error) in
             
             if granted {
