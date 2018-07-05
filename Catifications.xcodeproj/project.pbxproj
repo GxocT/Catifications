@@ -46,7 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D24E086A20ECC23B00B6E70C /* Newtifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newtifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24E086A20ECC23B00B6E70C /* Catifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24E086D20ECC23B00B6E70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24E086F20ECC23B00B6E70C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D24E087220ECC23B00B6E70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		D24E086120ECC23B00B6E70C = {
 			isa = PBXGroup;
 			children = (
-				D24E086C20ECC23B00B6E70C /* Newtifications */,
+				D24E086C20ECC23B00B6E70C /* Catifications */,
 				D2D7DC7020ECECD7009C9B59 /* Notification Extension */,
 				D2D7DC6B20ECECD7009C9B59 /* Frameworks */,
 				D24E086B20ECC23B00B6E70C /* Products */,
@@ -95,13 +95,13 @@
 		D24E086B20ECC23B00B6E70C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D24E086A20ECC23B00B6E70C /* Newtifications.app */,
+				D24E086A20ECC23B00B6E70C /* Catifications.app */,
 				D2D7DC6A20ECECD7009C9B59 /* Notification Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D24E086C20ECC23B00B6E70C /* Newtifications */ = {
+		D24E086C20ECC23B00B6E70C /* Catifications */ = {
 			isa = PBXGroup;
 			children = (
 				D24E086D20ECC23B00B6E70C /* AppDelegate.swift */,
@@ -112,7 +112,7 @@
 				D24E087920ECC23D00B6E70C /* Info.plist */,
 				D2D7DC7E20ECF7B0009C9B59 /* cat_01.jpg */,
 			);
-			path = Newtifications;
+			path = Catifications;
 			sourceTree = "<group>";
 		};
 		D2D7DC6B20ECECD7009C9B59 /* Frameworks */ = {
@@ -137,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D24E086920ECC23B00B6E70C /* Newtifications */ = {
+		D24E086920ECC23B00B6E70C /* Catifications */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D24E087C20ECC23D00B6E70C /* Build configuration list for PBXNativeTarget "Newtifications" */;
+			buildConfigurationList = D24E087C20ECC23D00B6E70C /* Build configuration list for PBXNativeTarget "Catifications" */;
 			buildPhases = (
 				D24E086620ECC23B00B6E70C /* Sources */,
 				D24E086720ECC23B00B6E70C /* Frameworks */,
@@ -151,9 +151,9 @@
 			dependencies = (
 				D2D7DC7820ECECD7009C9B59 /* PBXTargetDependency */,
 			);
-			name = Newtifications;
+			name = Catifications;
 			productName = Newtifications;
-			productReference = D24E086A20ECC23B00B6E70C /* Newtifications.app */;
+			productReference = D24E086A20ECC23B00B6E70C /* Catifications.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D2D7DC6920ECECD7009C9B59 /* Notification Extension */ = {
@@ -191,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D24E086520ECC23B00B6E70C /* Build configuration list for PBXProject "Newtifications" */;
+			buildConfigurationList = D24E086520ECC23B00B6E70C /* Build configuration list for PBXProject "Catifications" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D24E086920ECC23B00B6E70C /* Newtifications */,
+				D24E086920ECC23B00B6E70C /* Catifications */,
 				D2D7DC6920ECECD7009C9B59 /* Notification Extension */,
 			);
 		};
@@ -420,7 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gypsios.Newtifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -439,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gypsios.Newtifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,7 +484,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D24E086520ECC23B00B6E70C /* Build configuration list for PBXProject "Newtifications" */ = {
+		D24E086520ECC23B00B6E70C /* Build configuration list for PBXProject "Catifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D24E087A20ECC23D00B6E70C /* Debug */,
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D24E087C20ECC23D00B6E70C /* Build configuration list for PBXNativeTarget "Newtifications" */ = {
+		D24E087C20ECC23D00B6E70C /* Build configuration list for PBXNativeTarget "Catifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D24E087D20ECC23D00B6E70C /* Debug */,

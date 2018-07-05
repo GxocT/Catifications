@@ -18,8 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knj-KR-cfH">
-                                <rect key="frame" x="128" y="20" width="119" height="30"/>
-                                <state key="normal" title="Send Notification"/>
+                                <rect key="frame" x="87.5" y="308.5" width="200" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="gha-rO-FRE"/>
+                                    <constraint firstAttribute="height" constant="50" id="ucV-kb-OUd"/>
+                                </constraints>
+                                <state key="normal" title="Send Notification">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="sendNotificationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBS-Nr-6cp"/>
                                 </connections>
@@ -27,8 +34,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Knj-KR-cfH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FGr-TF-bno"/>
-                            <constraint firstItem="Knj-KR-cfH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GqO-Sb-BW5"/>
+                            <constraint firstItem="Knj-KR-cfH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N6y-D5-AUg"/>
+                            <constraint firstItem="Knj-KR-cfH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tQM-Uc-tva"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

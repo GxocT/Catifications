@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Newtifications.xcodeproj">
+      location = "self:/Users/yuri/Develop/Newtifications/Catifications.xcodeproj">
    </FileRef>
 </Workspace>
