@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             content.sound = .default
             content.categoryIdentifier = "category-simple"
             
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
             let uuid = UUID().uuidString
             let request = UNNotificationRequest(identifier: uuid, content: content, trigger: trigger)
             
@@ -57,4 +57,3 @@ class ViewController: UIViewController {
     }
     
 }
-

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="npu-rr-fCO">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="0g9-7Z-Y9P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RNW-Nw-1ca">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show ★ cats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imk-yk-Y1K">
+                                <rect key="frame" x="16" y="81" width="98.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show ★ ★ cats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvU-Ri-hDq">
+                                <rect key="frame" x="16" y="134" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show ★ ★ ★ cats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W8-mq-AxX">
+                                <rect key="frame" x="16" y="187" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFC-C2-emM" userLabel="1 Switch">
+                                <rect key="frame" x="310" y="76" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0A-zk-Tmu" userLabel="2 Switch">
+                                <rect key="frame" x="310" y="129" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cws-KP-NZS">
+                                <rect key="frame" x="109.5" y="28" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ru5-Un-dsU" userLabel="3 Switch">
+                                <rect key="frame" x="310" y="182" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BvU-Ri-hDq" firstAttribute="leading" secondItem="G6i-ae-49g" secondAttribute="leading" constant="16" id="4e1-rO-hGD"/>
+                            <constraint firstItem="Ru5-Un-dsU" firstAttribute="centerY" secondItem="7W8-mq-AxX" secondAttribute="centerY" id="CJP-fI-1aj"/>
+                            <constraint firstItem="BvU-Ri-hDq" firstAttribute="top" secondItem="imk-yk-Y1K" secondAttribute="bottom" constant="32" id="EeW-83-vHt"/>
+                            <constraint firstItem="x0A-zk-Tmu" firstAttribute="centerY" secondItem="BvU-Ri-hDq" secondAttribute="centerY" id="SAd-Qk-o2c"/>
+                            <constraint firstItem="G6i-ae-49g" firstAttribute="trailing" secondItem="Ru5-Un-dsU" secondAttribute="trailing" constant="16" id="U4i-AH-hyD"/>
+                            <constraint firstItem="G6i-ae-49g" firstAttribute="trailing" secondItem="x0A-zk-Tmu" secondAttribute="trailing" constant="16" id="UYP-6y-rdW"/>
+                            <constraint firstItem="7W8-mq-AxX" firstAttribute="top" secondItem="BvU-Ri-hDq" secondAttribute="bottom" constant="32" id="WXw-8X-fGd"/>
+                            <constraint firstItem="cws-KP-NZS" firstAttribute="centerX" secondItem="RNW-Nw-1ca" secondAttribute="centerX" id="acS-Qd-PrU"/>
+                            <constraint firstItem="imk-yk-Y1K" firstAttribute="leading" secondItem="G6i-ae-49g" secondAttribute="leading" constant="16" id="d0c-Pg-UWH"/>
+                            <constraint firstItem="G6i-ae-49g" firstAttribute="trailing" secondItem="cFC-C2-emM" secondAttribute="trailing" constant="16" id="iNY-Ed-Fo6"/>
+                            <constraint firstItem="7W8-mq-AxX" firstAttribute="leading" secondItem="G6i-ae-49g" secondAttribute="leading" constant="16" id="rqj-dY-U9g"/>
+                            <constraint firstItem="imk-yk-Y1K" firstAttribute="top" secondItem="cws-KP-NZS" secondAttribute="bottom" constant="32" id="viX-h6-p8e"/>
+                            <constraint firstItem="cFC-C2-emM" firstAttribute="centerY" secondItem="imk-yk-Y1K" secondAttribute="centerY" id="z2g-Kn-GZR"/>
+                            <constraint firstItem="cws-KP-NZS" firstAttribute="top" secondItem="G6i-ae-49g" secondAttribute="top" constant="8" id="zFs-bf-Laa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G6i-ae-49g"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Th-Xu-wl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+</document>

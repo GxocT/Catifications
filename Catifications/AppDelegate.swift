@@ -23,11 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func registerNotifications() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .alert, .sound]) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .alert, .sound, .providesAppNotificationSettings]) {
             (granted, error) in
             
             if granted {
-                
+                UNUserNotificationCenter.current().delegate = self
             }
         }
     }
@@ -37,6 +37,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
-
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
+        openSettings()
+    }
+    
+    func openSettings() {
+        let storyboard = UIStoryboard(name: "Settings", bundle: nil)
+        let settingsVC = storyboard.instantiateViewController(withIdentifier: "Settings")
+        window?.rootViewController = settingsVC
+    }
+    
+}
