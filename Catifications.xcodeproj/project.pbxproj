@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23466D320EFB21700A99E62 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D23466D220EFB21700A99E62 /* Localizable.stringsdict */; };
+		D23466D420EFB21700A99E62 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D23466D220EFB21700A99E62 /* Localizable.stringsdict */; };
 		D24E086E20ECC23B00B6E70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E086D20ECC23B00B6E70C /* AppDelegate.swift */; };
 		D24E087020ECC23B00B6E70C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24E086F20ECC23B00B6E70C /* ViewController.swift */; };
 		D24E087320ECC23B00B6E70C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24E087120ECC23B00B6E70C /* Main.storyboard */; };
@@ -47,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D23466D220EFB21700A99E62 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		D24E086A20ECC23B00B6E70C /* Catifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24E086D20ECC23B00B6E70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24E086F20ECC23B00B6E70C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 				D24E087620ECC23D00B6E70C /* LaunchScreen.storyboard */,
 				D24E087920ECC23D00B6E70C /* Info.plist */,
 				D2D7DC7E20ECF7B0009C9B59 /* cat_01.jpg */,
+				D23466D220EFB21700A99E62 /* Localizable.stringsdict */,
 			);
 			path = Catifications;
 			sourceTree = "<group>";
@@ -220,6 +224,7 @@
 			files = (
 				D24E087820ECC23D00B6E70C /* LaunchScreen.storyboard in Resources */,
 				D2D7DC7F20ECF7B0009C9B59 /* cat_01.jpg in Resources */,
+				D23466D320EFB21700A99E62 /* Localizable.stringsdict in Resources */,
 				D24E087520ECC23D00B6E70C /* Assets.xcassets in Resources */,
 				D24E087320ECC23B00B6E70C /* Main.storyboard in Resources */,
 				DA14AEF120EE3CE700002C3C /* Settings.storyboard in Resources */,
@@ -232,6 +237,7 @@
 			files = (
 				D2D7DC7520ECECD7009C9B59 /* MainInterface.storyboard in Resources */,
 				D2D7DC8020ECF7B0009C9B59 /* cat_01.jpg in Resources */,
+				D23466D420EFB21700A99E62 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

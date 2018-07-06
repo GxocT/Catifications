@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NOTIFICATION_SUMMARY</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@notifications@</string>
+		<key>notifications</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>%u новых котиков в разделе %@</string>
+			<key>one</key>
+			<string>%u новый котик в разделе %@</string>
+			<key>two</key>
+			<string>%u новых котика в разделе %@</string>
+			<key>few</key>
+			<string>%u новых котиков в разделе %@</string>
+			<key>many</key>
+			<string>%u новых котиков в разделе %@</string>
+			<key>other</key>
+			<string>%u новых котиков в разделе %@</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
