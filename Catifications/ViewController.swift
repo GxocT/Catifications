@@ -9,11 +9,23 @@
 import UIKit
 import UserNotifications
 
+private extension String {
+    
+    static let allCats = "all-cats"
+    static let threeStarCats = "3-star-cats"
+    
+}
+
 class ViewController: UIViewController {
 
     @IBAction func sendNotificationPressed(_ sender: UIButton) {
-        sendLocalNotification()
+        sendLocalNotification(with: .allCats, summary: "Все Коты", count: 1)
     }
+    
+    @IBAction func send3StarsNotificationPressed(_ sender: UIButton) {
+        sendLocalNotification(with: .threeStarCats, summary: "Избранные", count: 10)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +40,20 @@ class ViewController: UIViewController {
             UNNotificationAction(identifier: "dismiss",  title: "Dismiss", options: []),
             ]
         
-        let simpleCategory = UNNotificationCategory(identifier: "category-simple", actions: actions, intentIdentifiers: [], options: [])
+        let summaryFormat = NSString.localizedUserNotificationString(forKey: "NOTIFICATION_SUMMARY",
+                                                                     arguments: nil)
+        
+        let simpleCategory = UNNotificationCategory(identifier: "Cat-Category",
+                                                    actions: actions,
+                                                    intentIdentifiers: [.threeStarCats, .allCats],
+                                                    hiddenPreviewsBodyPlaceholder: nil,
+                                                    categorySummaryFormat: summaryFormat,
+                                                    options: [])
+        
         UNUserNotificationCenter.current().setNotificationCategories([simpleCategory])
     }
 
-    func sendLocalNotification() {
+    func sendLocalNotification(with threadId: String, summary: String, count: Int) {
         UNUserNotificationCenter.current().getNotificationSettings {
             (settings) in
             
@@ -40,12 +61,17 @@ class ViewController: UIViewController {
             
             let content = UNMutableNotificationContent()
             content.title = "Cat Title"
-            content.subtitle = "Cat Subtitle"
             content.body = "Cat Body"
             content.sound = .default
-            content.categoryIdentifier = "category-simple"
+            content.categoryIdentifier = "Cat-Category"
             
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+            content.threadIdentifier = threadId
+            content.subtitle = "Thread ID: \(threadId)"
+            
+            content.summaryArgument = summary
+            content.summaryArgumentCount = count
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
             let uuid = UUID().uuidString
             let request = UNNotificationRequest(identifier: uuid, content: content, trigger: trigger)
             
